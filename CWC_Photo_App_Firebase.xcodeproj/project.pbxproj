@@ -12,6 +12,9 @@
 		2F7ABB1E25DCA7A900BFBF16 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7ABB1D25DCA7A900BFBF16 /* FeedViewController.swift */; };
 		2F7ABB4325DCAC3500BFBF16 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7ABB4225DCAC3500BFBF16 /* CameraViewController.swift */; };
 		2F7ABB4625DCAC5200BFBF16 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7ABB4525DCAC5200BFBF16 /* SettingsViewController.swift */; };
+		2F7ABB4925DD8CF700BFBF16 /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7ABB4825DD8CF700BFBF16 /* PhotoUser.swift */; };
+		2F7ABB4C25DD8D2F00BFBF16 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7ABB4B25DD8D2F00BFBF16 /* UserService.swift */; };
+		2F7ABB4F25DD96CE00BFBF16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7ABB4E25DD96CE00BFBF16 /* Constants.swift */; };
 		2FABF9E825DC8D3F007A682D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABF9E725DC8D3F007A682D /* AppDelegate.swift */; };
 		2FABF9EA25DC8D3F007A682D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABF9E925DC8D3F007A682D /* SceneDelegate.swift */; };
 		2FABF9EF25DC8D3F007A682D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FABF9ED25DC8D3F007A682D /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 		2F7ABB1D25DCA7A900BFBF16 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2F7ABB4225DCAC3500BFBF16 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		2F7ABB4525DCAC5200BFBF16 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2F7ABB4825DD8CF700BFBF16 /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
+		2F7ABB4B25DD8D2F00BFBF16 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		2F7ABB4E25DD96CE00BFBF16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2FABF9E425DC8D3F007A682D /* CWC_Photo_App_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWC_Photo_App_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FABF9E725DC8D3F007A682D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FABF9E925DC8D3F007A682D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 		2F7ABB1025DC95E000BFBF16 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2F7ABB4B25DD8D2F00BFBF16 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -71,6 +78,7 @@
 		2F7ABB1125DC95FE00BFBF16 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2F7ABB4E25DD96CE00BFBF16 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 		2F7ABB1325DC961800BFBF16 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2F7ABB4825DD8CF700BFBF16 /* PhotoUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,7 +298,10 @@
 			files = (
 				2F7ABB1B25DC96E000BFBF16 /* CreateProfileViewController.swift in Sources */,
 				2F7ABB1625DC966500BFBF16 /* LoginViewController.swift in Sources */,
+				2F7ABB4C25DD8D2F00BFBF16 /* UserService.swift in Sources */,
 				2F7ABB4625DCAC5200BFBF16 /* SettingsViewController.swift in Sources */,
+				2F7ABB4925DD8CF700BFBF16 /* PhotoUser.swift in Sources */,
+				2F7ABB4F25DD96CE00BFBF16 /* Constants.swift in Sources */,
 				2F7ABB1E25DCA7A900BFBF16 /* FeedViewController.swift in Sources */,
 				2FABF9E825DC8D3F007A682D /* AppDelegate.swift in Sources */,
 				2FABF9EA25DC8D3F007A682D /* SceneDelegate.swift in Sources */,
