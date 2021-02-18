@@ -22,6 +22,9 @@
 		2FABF9F125DC8D3F007A682D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FABF9F025DC8D3F007A682D /* Assets.xcassets */; };
 		2FABF9F425DC8D3F007A682D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FABF9F225DC8D3F007A682D /* LaunchScreen.storyboard */; };
 		2FABF9FD25DC8FEF007A682D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FABF9FC25DC8FEF007A682D /* GoogleService-Info.plist */; };
+		2FC39CA025DEE9EC00EB7479 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC39C9F25DEE9EC00EB7479 /* MainTabBarController.swift */; };
+		2FC39CA325DF00E900EB7479 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC39CA225DF00E900EB7479 /* Photo.swift */; };
+		2FC39CC725DF016D00EB7479 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC39CC625DF016D00EB7479 /* PhotoService.swift */; };
 		E85C4A386D71FB8E4E23A9FC /* Pods_CWC_Photo_App_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A785D6352492BC6F6CC975 /* Pods_CWC_Photo_App_Firebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		2FABF9F325DC8D3F007A682D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FABF9F525DC8D3F007A682D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FABF9FC25DC8FEF007A682D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FC39C9F25DEE9EC00EB7479 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2FC39CA225DF00E900EB7479 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		2FC39CC625DF016D00EB7479 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		4825C3BB3F785E289B787491 /* Pods-CWC_Photo_App_Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWC_Photo_App_Firebase.debug.xcconfig"; path = "Target Support Files/Pods-CWC_Photo_App_Firebase/Pods-CWC_Photo_App_Firebase.debug.xcconfig"; sourceTree = "<group>"; };
 		ABF9C8508FED7E569CEEF843 /* Pods-CWC_Photo_App_Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWC_Photo_App_Firebase.release.xcconfig"; path = "Target Support Files/Pods-CWC_Photo_App_Firebase/Pods-CWC_Photo_App_Firebase.release.xcconfig"; sourceTree = "<group>"; };
 		D1A785D6352492BC6F6CC975 /* Pods_CWC_Photo_App_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWC_Photo_App_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +80,7 @@
 			children = (
 				2F7ABB4B25DD8D2F00BFBF16 /* UserService.swift */,
 				2F7ABB7325DDD87D00BFBF16 /* LocalStorageService.swift */,
+				2FC39CC625DF016D00EB7479 /* PhotoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -97,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2F7ABB4825DD8CF700BFBF16 /* PhotoUser.swift */,
+				2FC39CA225DF00E900EB7479 /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 				2F7ABB1D25DCA7A900BFBF16 /* FeedViewController.swift */,
 				2F7ABB4225DCAC3500BFBF16 /* CameraViewController.swift */,
 				2F7ABB4525DCAC5200BFBF16 /* SettingsViewController.swift */,
+				2FC39C9F25DEE9EC00EB7479 /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,9 +310,12 @@
 			files = (
 				2F7ABB1B25DC96E000BFBF16 /* CreateProfileViewController.swift in Sources */,
 				2F7ABB1625DC966500BFBF16 /* LoginViewController.swift in Sources */,
+				2FC39CA025DEE9EC00EB7479 /* MainTabBarController.swift in Sources */,
 				2F7ABB4C25DD8D2F00BFBF16 /* UserService.swift in Sources */,
 				2F7ABB4625DCAC5200BFBF16 /* SettingsViewController.swift in Sources */,
 				2F7ABB4925DD8CF700BFBF16 /* PhotoUser.swift in Sources */,
+				2FC39CC725DF016D00EB7479 /* PhotoService.swift in Sources */,
+				2FC39CA325DF00E900EB7479 /* Photo.swift in Sources */,
 				2F7ABB4F25DD96CE00BFBF16 /* Constants.swift in Sources */,
 				2F7ABB1E25DCA7A900BFBF16 /* FeedViewController.swift in Sources */,
 				2FABF9E825DC8D3F007A682D /* AppDelegate.swift in Sources */,
@@ -386,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
