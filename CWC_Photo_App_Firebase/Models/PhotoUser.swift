@@ -11,6 +11,6 @@ import Foundation
 struct PhotoUser {
     
     var userId:String?
-    var userName:String?
+    var username:String?
     
 }

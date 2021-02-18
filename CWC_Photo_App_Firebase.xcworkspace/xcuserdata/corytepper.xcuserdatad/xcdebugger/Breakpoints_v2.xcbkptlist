@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "32294DB5-EBA1-40C8-8E9F-46A4887350CF"
+            uuid = "3B631F79-C943-412D-BA45-8395CBC8B62D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CWC_Photo_App_Firebase/ViewControllers/LoginViewController.swift"
+            filePath = "CWC_Photo_App_Firebase/ViewControllers/SettingsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "authUI(_:didSignInWith:error:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "signOutTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
