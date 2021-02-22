@@ -23,13 +23,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // If found, set the root view controller
         if user != nil {
+            
             // There was a saved user, go to tab bar control
             let tabBarVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(identifier: Constants.Storyboards.tabBarController)
             
             window?.rootViewController = tabBarVC
             window?.makeKeyAndVisible()
         }
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

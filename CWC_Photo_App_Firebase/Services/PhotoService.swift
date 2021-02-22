@@ -12,6 +12,52 @@ import FirebaseAuth
 
 class PhotoService {
     
+    
+    static func retrievePhotos(completion: @escaping ([Photo]) -> Void) {
+                
+        // Get a database reference
+        let db = Firestore.firestore()
+        
+        // Get all the documents form the photos collection
+        db.collection("photos").getDocuments { (snapshot, error) in
+            
+            // Check for errors
+            if error != nil {
+                
+                // Error in retrieving photos
+                return
+            }
+            
+            // Get all the documents
+            let documents = snapshot?.documents
+            
+            // Check that documents aren't nil
+            if let documents = documents {
+                
+                // Create an array to hold all of our Photo structs
+                var photoArray = [Photo]()
+            
+                // Loop through the documents, create a photo struct for each
+                for doc in documents {
+                    
+                    // Create photo struct
+                    let p = Photo(snapshot: doc)
+                    
+                    if p != nil {
+                        // Store it in our array
+                        photoArray.insert(p!, at: 0)
+                    }
+                }
+                
+                // Pass back the photo array
+                completion(photoArray)
+            }
+
+        }
+        
+        
+    }
+    
     static func savePhoto(image:UIImage, progressUpdate: @escaping (Double) -> Void ) {
         
         // Check that there's a user logged in
@@ -48,7 +94,7 @@ class PhotoService {
         
         uploadTask.observe(.progress) { (taskSnapshot) in
             
-            let pct = Double(taskSnapshot.progress!.completedUnitCount) / Double(taskSnapshot.progress!.totalUnitCount) 
+            let pct = Double(taskSnapshot.progress!.completedUnitCount) / Double(taskSnapshot.progress!.totalUnitCount)
             
             print(pct)
             

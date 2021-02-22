@@ -70,6 +70,51 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fV8-2O-RBl">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo Cell" rowHeight="300" id="UMs-Ii-yhK" customClass="PhotoCell" customModule="CWC_Photo_App_Firebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UMs-Ii-yhK" id="9s3-yj-fqk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mXk-oO-quo">
+                                                    <rect key="frame" x="40" y="62" width="334" height="176"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="176" id="PhV-qP-xmq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-n5-GqF">
+                                                    <rect key="frame" x="40" y="248" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJB-cM-y1U">
+                                                    <rect key="frame" x="40" y="31" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mXk-oO-quo" firstAttribute="top" secondItem="qJB-cM-y1U" secondAttribute="bottom" constant="10" id="11H-yx-VDI"/>
+                                                <constraint firstItem="mXk-oO-quo" firstAttribute="leading" secondItem="9s3-yj-fqk" secondAttribute="leadingMargin" constant="20" id="D0h-dE-5Fr"/>
+                                                <constraint firstItem="EuS-n5-GqF" firstAttribute="leading" secondItem="9s3-yj-fqk" secondAttribute="leadingMargin" constant="20" id="GvY-lt-SBg"/>
+                                                <constraint firstItem="qJB-cM-y1U" firstAttribute="leading" secondItem="9s3-yj-fqk" secondAttribute="leadingMargin" constant="20" id="Qhf-GD-pfy"/>
+                                                <constraint firstItem="qJB-cM-y1U" firstAttribute="top" secondItem="9s3-yj-fqk" secondAttribute="topMargin" constant="20" id="RjR-Id-prh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="EuS-n5-GqF" secondAttribute="bottom" constant="20" id="oYq-0t-6sZ"/>
+                                                <constraint firstItem="EuS-n5-GqF" firstAttribute="top" secondItem="mXk-oO-quo" secondAttribute="bottom" constant="10" id="pAF-qF-BB9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mXk-oO-quo" secondAttribute="trailing" constant="20" id="wHB-tc-pyC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="EuS-n5-GqF" id="W1V-M7-pKx"/>
+                                            <outlet property="photoImageView" destination="mXk-oO-quo" id="iwP-4q-uGq"/>
+                                            <outlet property="usernameLabel" destination="qJB-cM-y1U" id="NeQ-jb-jzn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2nk-gf-8JE"/>

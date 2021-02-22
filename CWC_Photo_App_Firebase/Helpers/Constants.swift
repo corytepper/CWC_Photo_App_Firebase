@@ -11,6 +11,8 @@ struct Constants {
     
     struct Storyboards {
         
+        static let photoCellId = "Photo Cell"
+        
         static let loginNavController = "loginNavController"
         
         static let tabBarController = "mainTabBarController"

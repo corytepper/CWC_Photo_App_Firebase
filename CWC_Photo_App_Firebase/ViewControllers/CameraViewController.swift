@@ -9,16 +9,12 @@ import UIKit
 
 class CameraViewController: UIViewController {
 
-    
     @IBOutlet var progressLabel: UILabel!
-    
     
     @IBOutlet var progressBar: UIProgressView!
     
-    
     @IBOutlet var doneButton: UIButton!
     
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +70,6 @@ class CameraViewController: UIViewController {
     @IBAction func doneTapped(_ sender: Any) {
         
         // Get a reference to the tab bar controller
-        
         let tabBarVC = self.tabBarController as? MainTabBarController
         
         if let tabBarVC = tabBarVC {
