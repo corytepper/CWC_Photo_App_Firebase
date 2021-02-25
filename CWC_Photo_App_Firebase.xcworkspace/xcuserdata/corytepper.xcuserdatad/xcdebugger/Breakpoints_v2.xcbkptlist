@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E41A52D1-5BFF-4DC9-AAD6-2930DCAB8C94"
+            uuid = "51B1A260-5759-4833-83AA-DF8CD52BAD8D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CWC_Photo_App_Firebase/Services/PhotoService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "retrievePhotos(completion:)"
             landmarkType = "7">
          </BreakpointContent>

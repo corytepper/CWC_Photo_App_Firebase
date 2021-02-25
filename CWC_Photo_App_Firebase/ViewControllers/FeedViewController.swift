@@ -25,8 +25,6 @@ class FeedViewController: UIViewController {
 
         // Call the PhotoService to retreive the photos
         PhotoService.retrievePhotos { (retrievedPhotos) in
-            
-            print("photos retrieved")
            
             // Set our photos array to the retrieved photos
             self.photos = retrievedPhotos
@@ -79,7 +77,6 @@ class FeedViewController: UIViewController {
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        print(photos.count)
         return photos.count
        
         

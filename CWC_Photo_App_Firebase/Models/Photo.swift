@@ -18,6 +18,8 @@ struct Photo {
     
     init? (snapshot:QueryDocumentSnapshot) {
         
+        
+        
         // Parse the data out
         let data = snapshot.data()
         

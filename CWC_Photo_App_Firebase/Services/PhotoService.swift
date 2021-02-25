@@ -41,11 +41,8 @@ class PhotoService {
                 for doc in documents {
                     
                     // Create photo struct
-                    let p = Photo(snapshot: doc)
-                    
-                    if p != nil {
-                        // Store it in our array
-                        photoArray.insert(p!, at: 0)
+                    if let photo = Photo(snapshot: doc) {
+                        photoArray.insert(photo, at: 0)
                     }
                 }
                 
@@ -133,8 +130,7 @@ class PhotoService {
                 let dateString = df.string(from: Date())
                 
                 // Create a dictionary of the photo metadata
-                let metadata = ["photoId":photoId, "byId":userId!, "byUserName":username!, "date":dateString, "url":url!.absoluteString ]
-                
+                let metadata = ["photoId":photoId, "byId":userId!, "byUsername":username!, "date":dateString, "url":url!.absoluteString ]
                 
                 // Save the metadata to the firestroe database
                 let db = Firestore.firestore()
