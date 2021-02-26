@@ -56,6 +56,7 @@ class CameraViewController: UIViewController {
                 
                 // Check if it's done
                 if roundedPct == 100 {
+                    self.progressLabel.text = "Upload Completed!"
                     self.doneButton.alpha = 1
                 }
                 
